@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión Colegio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sistema Colegio</h1>
+
+  <!-- Sección Colegio -->
+  <section>
+    <h2>📚 Colegios</h2>
+    <form id="form-colegio" class="form-grid">
+      <input type="text" id="colegio-nombre" placeholder="Nombre" required>
+      <input type="text" id="colegio-direccion" placeholder="Dirección" required>
+      <input type="text" id="colegio-contacto" placeholder="Teléfono" required>
+      <input type="text" id="colegio-usuario" placeholder="Usuario" required>
+      <input type="password" id="colegio-clave" placeholder="Clave" required>
+      <button type="submit">➕ Guardar Colegio</button>
+    </form>
+
+    <table id="tabla-colegios">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Sección Cursos -->
+  <section>
+    <h2>🏫 Cursos</h2>
+    <form id="form-curso" class="form-grid">
+      <input type="text" id="curso-nombre" placeholder="Nombre" required>
+      <input type="text" id="curso-descripcion" placeholder="Descripción" required>
+      <select id="curso-colegioId" required>
+        <option value="">Seleccione un colegio</option>
+      </select>
+      <button type="submit">➕ Guardar Curso</button>
+    </form>
+
+    <table id="tabla-cursos">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Colegio</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Sección Salones -->
+  <section>
+    <h2>🏠 Salones</h2>
+    <form id="form-salon" class="form-grid">
+      <input type="text" id="salon-nombre" placeholder="Nombre" required>
+      <select id="salon-cursoId" required>
+        <option value="">Seleccione un curso</option>
+      </select>
+      <button type="submit">➕ Guardar Salón</button>
+    </form>
+
+    <table id="tabla-salones">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Curso</th>
+          <th>Cupo Max.</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Sección Distribución -->
+  <section>
+    <h2>👨‍🎓 Distribución de Estudiantes</h2>
+    <form id="form-distribucion" class="form-grid">
+      <select id="distribucion-colegioId" required>
+        <option value="">Seleccione un colegio</option>
+      </select>
+      <input type="number" id="distribucion-estudiantes" placeholder="Cantidad de estudiantes" required>
+      <button type="submit">⚡ Distribuir</button>
+    </form>
+
+    <table id="tabla-distribucion" style="display: none;">
+      <thead>
+        <tr>
+          <th>Colegio</th>
+          <th>Curso</th>
+          <th>Salón</th>
+          <th>Cantidad Asignada</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

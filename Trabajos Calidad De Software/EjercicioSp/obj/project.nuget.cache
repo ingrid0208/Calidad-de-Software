@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ExUzix1AJMY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ingrid Medina\\OneDrive\\Documentos\\Visual Studio 2022\\EjercicioSp\\EjercicioSp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ingrid Medina\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
